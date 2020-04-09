@@ -43,6 +43,14 @@
 	<string>LaunchScreen</string>
 	<key>UIMainStoryboardFile</key>
 	<string>Main</string>
+	<key>UIAppFonts</key>
+	<array>
+		<string>BalooThambi2-Bold.ttf</string>
+		<string>BalooThambi2-ExtraBold.ttf</string>
+		<string>BalooThambi2-Medium.ttf</string>
+		<string>BalooThambi2-Regular.ttf</string>
+		<string>BalooThambi2-SemiBold.ttf</string>
+	</array>
 	<key>UIRequiredDeviceCapabilities</key>
 	<array>
 		<string>armv7</string>

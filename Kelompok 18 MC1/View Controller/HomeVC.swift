@@ -18,7 +18,9 @@ class HomeVC: UIViewController {
     @IBOutlet weak var timerLabel: UILabel!
     @IBOutlet weak var slider: UISlider!
     @IBOutlet weak var timerProgress: UIProgressView!
+    @IBOutlet weak var nappyImage: UIImageView!
     
+    //for Timer
     var seconds: Int64 = 0 //This variable will hold a starting value of seconds. It could be any amount above 0.
     var timer = Timer()
     var isTimerRunning = false //This will be used to make sure only one timer is created at a time.
@@ -27,13 +29,16 @@ class HomeVC: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        timerLabel.layer.cornerRadius = 20
+        topTextLabel.text = "Set the timer"
+        
         pauseButton.isEnabled = false
         pauseButton.isHidden = true
         resumeButton.isHidden = true
         slider.isHidden = false
         timerProgress.isHidden = true
         resetButton.isHidden = true
-        topTextLabel.text = "Set the timer"
+        
     }
     
     @IBAction func sliderValueChange(_ sender: UISlider) {
@@ -51,6 +56,7 @@ class HomeVC: UIViewController {
         startButton.isEnabled = false
         startButton.isHidden = true
         topTextLabel.text = "Take a nap"
+        nappyImage.image = UIImage(named: "NappyRevisi-5")
         
         if isTimerRunning == false {
             runTimer()
@@ -86,6 +92,7 @@ class HomeVC: UIViewController {
             resumeButton.isHidden = false
             resetButton.isHidden = false
             pauseButton.isHidden = true
+            nappyImage.image = UIImage(named: "NappyRevisi-6")
         }
     }
     @IBAction func resumeButtonTapped(_ sender: UIButton) {
@@ -95,6 +102,7 @@ class HomeVC: UIViewController {
             resumeButton.isHidden = true
             resetButton.isHidden = true
             pauseButton.isHidden = false
+            nappyImage.image = UIImage(named: "NappyRevisi-5")
         }
     }
     
@@ -102,10 +110,10 @@ class HomeVC: UIViewController {
         timer.invalidate()
         seconds = Int64(slider.value) * 60
         timerLabel.text = timeString(time: TimeInterval(slider.value * 60))
-        self.pauseButton.setTitle("Pause", for: .normal)
         isTimerRunning = false
         resumeTapped = false
         topTextLabel.text = "Set the timer"
+        nappyImage.image = UIImage(named: "NappyRevisi-8")
         
         //timer progress reset
         timerProgress.progress = 0.0
@@ -126,6 +134,7 @@ class HomeVC: UIViewController {
         if seconds < 1 {
             timer.invalidate()
             //Send alert to indicate "time's up!"
+            nappyImage.image = UIImage(named: "NappyRevisi-6")
         } else {
             seconds -= 1
             timerLabel.text = timeString(time: TimeInterval(seconds))

@@ -14,10 +14,18 @@
 		7C325094243C24590094F45C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7C325093243C24590094F45C /* Assets.xcassets */; };
 		7C325097243C24590094F45C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7C325095243C24590094F45C /* LaunchScreen.storyboard */; };
 		7C32509F243C65D50094F45C /* Relax.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7C32509E243C65D50094F45C /* Relax.storyboard */; };
-		7C3250A2243C66880094F45C /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7C3250A1243C66880094F45C /* Home.storyboard */; };
 		7C3250A5243C66DE0094F45C /* RelaxVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C3250A4243C66DE0094F45C /* RelaxVC.swift */; };
 		7C3250A7243C67300094F45C /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C3250A6243C67300094F45C /* HomeVC.swift */; };
-		7CE1F30B243F380100A15787 /* HomeVCMusic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CE1F30A243F380100A15787 /* HomeVCMusic.swift */; };
+		7CE1F30C243F47AE00A15787 /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7CE1F30E243F47AE00A15787 /* Home.storyboard */; };
+		7CF40ED0243F6A8B00C2F351 /* BalooThambi2-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7CF40ECB243F6A8A00C2F351 /* BalooThambi2-Regular.ttf */; };
+		7CF40ED1243F6A8B00C2F351 /* BalooThambi2-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7CF40ECC243F6A8A00C2F351 /* BalooThambi2-SemiBold.ttf */; };
+		7CF40ED2243F6A8B00C2F351 /* BalooThambi2-ExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7CF40ECD243F6A8B00C2F351 /* BalooThambi2-ExtraBold.ttf */; };
+		7CF40ED3243F6A8B00C2F351 /* BalooThambi2-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7CF40ECE243F6A8B00C2F351 /* BalooThambi2-Bold.ttf */; };
+		7CF40ED4243F6A8B00C2F351 /* BalooThambi2-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7CF40ECF243F6A8B00C2F351 /* BalooThambi2-Medium.ttf */; };
+		7CF40EDC243F7AA100C2F351 /* MusicVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CF40EDB243F7AA100C2F351 /* MusicVC.swift */; };
+		7CF40EDE243F85C900C2F351 /* bensound-summer.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 7CF40EDD243F85C900C2F351 /* bensound-summer.mp3 */; };
+		7CF40EE1243F86C400C2F351 /* bensound-ukulele.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 7CF40EE0243F86C400C2F351 /* bensound-ukulele.mp3 */; };
+		7CF40EE3243F872700C2F351 /* bensound-creativeminds.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 7CF40EE2243F872700C2F351 /* bensound-creativeminds.mp3 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,10 +38,18 @@
 		7C325096243C24590094F45C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7C325098243C24590094F45C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7C32509E243C65D50094F45C /* Relax.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Relax.storyboard; sourceTree = "<group>"; };
-		7C3250A1243C66880094F45C /* Home.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
 		7C3250A4243C66DE0094F45C /* RelaxVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RelaxVC.swift; sourceTree = "<group>"; };
 		7C3250A6243C67300094F45C /* HomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
-		7CE1F30A243F380100A15787 /* HomeVCMusic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVCMusic.swift; sourceTree = "<group>"; };
+		7CE1F30D243F47AE00A15787 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Home.storyboard; sourceTree = "<group>"; };
+		7CF40ECB243F6A8A00C2F351 /* BalooThambi2-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "BalooThambi2-Regular.ttf"; sourceTree = "<group>"; };
+		7CF40ECC243F6A8A00C2F351 /* BalooThambi2-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "BalooThambi2-SemiBold.ttf"; sourceTree = "<group>"; };
+		7CF40ECD243F6A8B00C2F351 /* BalooThambi2-ExtraBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "BalooThambi2-ExtraBold.ttf"; sourceTree = "<group>"; };
+		7CF40ECE243F6A8B00C2F351 /* BalooThambi2-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "BalooThambi2-Bold.ttf"; sourceTree = "<group>"; };
+		7CF40ECF243F6A8B00C2F351 /* BalooThambi2-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "BalooThambi2-Medium.ttf"; sourceTree = "<group>"; };
+		7CF40EDB243F7AA100C2F351 /* MusicVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicVC.swift; sourceTree = "<group>"; };
+		7CF40EDD243F85C900C2F351 /* bensound-summer.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "bensound-summer.mp3"; sourceTree = "<group>"; };
+		7CF40EE0243F86C400C2F351 /* bensound-ukulele.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "bensound-ukulele.mp3"; sourceTree = "<group>"; };
+		7CF40EE2243F872700C2F351 /* bensound-creativeminds.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "bensound-creativeminds.mp3"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +67,8 @@
 			isa = PBXGroup;
 			children = (
 				7C325089243C24560094F45C /* Kelompok 18 MC1 */,
+				7CF40EDF243F85D000C2F351 /* Music */,
+				7CF40ED5243F6A9D00C2F351 /* Font */,
 				7C325088243C24560094F45C /* Products */,
 			);
 			sourceTree = "<group>";
@@ -66,12 +84,12 @@
 		7C325089243C24560094F45C /* Kelompok 18 MC1 */ = {
 			isa = PBXGroup;
 			children = (
+				7CF40ED8243F6CE900C2F351 /* Model */,
 				7C3250A0243C66300094F45C /* Storyboard */,
 				7C3250A3243C66950094F45C /* View Controller */,
 				7C32508A243C24560094F45C /* AppDelegate.swift */,
 				7C32508C243C24560094F45C /* SceneDelegate.swift */,
 				7C325093243C24590094F45C /* Assets.xcassets */,
-				7C325095243C24590094F45C /* LaunchScreen.storyboard */,
 				7C325098243C24590094F45C /* Info.plist */,
 			);
 			path = "Kelompok 18 MC1";
@@ -80,9 +98,10 @@
 		7C3250A0243C66300094F45C /* Storyboard */ = {
 			isa = PBXGroup;
 			children = (
-				7C325090243C24560094F45C /* Main.storyboard */,
+				7CE1F30E243F47AE00A15787 /* Home.storyboard */,
 				7C32509E243C65D50094F45C /* Relax.storyboard */,
-				7C3250A1243C66880094F45C /* Home.storyboard */,
+				7C325090243C24560094F45C /* Main.storyboard */,
+				7C325095243C24590094F45C /* LaunchScreen.storyboard */,
 			);
 			path = Storyboard;
 			sourceTree = "<group>";
@@ -90,12 +109,41 @@
 		7C3250A3243C66950094F45C /* View Controller */ = {
 			isa = PBXGroup;
 			children = (
-				7C32508E243C24560094F45C /* ViewController.swift */,
-				7C3250A4243C66DE0094F45C /* RelaxVC.swift */,
 				7C3250A6243C67300094F45C /* HomeVC.swift */,
-				7CE1F30A243F380100A15787 /* HomeVCMusic.swift */,
+				7CF40EDB243F7AA100C2F351 /* MusicVC.swift */,
+				7C3250A4243C66DE0094F45C /* RelaxVC.swift */,
+				7C32508E243C24560094F45C /* ViewController.swift */,
 			);
 			path = "View Controller";
+			sourceTree = "<group>";
+		};
+		7CF40ED5243F6A9D00C2F351 /* Font */ = {
+			isa = PBXGroup;
+			children = (
+				7CF40ECE243F6A8B00C2F351 /* BalooThambi2-Bold.ttf */,
+				7CF40ECD243F6A8B00C2F351 /* BalooThambi2-ExtraBold.ttf */,
+				7CF40ECF243F6A8B00C2F351 /* BalooThambi2-Medium.ttf */,
+				7CF40ECB243F6A8A00C2F351 /* BalooThambi2-Regular.ttf */,
+				7CF40ECC243F6A8A00C2F351 /* BalooThambi2-SemiBold.ttf */,
+			);
+			path = Font;
+			sourceTree = "<group>";
+		};
+		7CF40ED8243F6CE900C2F351 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		7CF40EDF243F85D000C2F351 /* Music */ = {
+			isa = PBXGroup;
+			children = (
+				7CF40EE0243F86C400C2F351 /* bensound-ukulele.mp3 */,
+				7CF40EDD243F85C900C2F351 /* bensound-summer.mp3 */,
+				7CF40EE2243F872700C2F351 /* bensound-creativeminds.mp3 */,
+			);
+			path = Music;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -157,8 +205,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				7C325097243C24590094F45C /* LaunchScreen.storyboard in Resources */,
-				7C3250A2243C66880094F45C /* Home.storyboard in Resources */,
+				7CF40EE3243F872700C2F351 /* bensound-creativeminds.mp3 in Resources */,
+				7CE1F30C243F47AE00A15787 /* Home.storyboard in Resources */,
 				7C325094243C24590094F45C /* Assets.xcassets in Resources */,
+				7CF40ED0243F6A8B00C2F351 /* BalooThambi2-Regular.ttf in Resources */,
+				7CF40EDE243F85C900C2F351 /* bensound-summer.mp3 in Resources */,
+				7CF40ED1243F6A8B00C2F351 /* BalooThambi2-SemiBold.ttf in Resources */,
+				7CF40ED2243F6A8B00C2F351 /* BalooThambi2-ExtraBold.ttf in Resources */,
+				7CF40ED3243F6A8B00C2F351 /* BalooThambi2-Bold.ttf in Resources */,
+				7CF40EE1243F86C400C2F351 /* bensound-ukulele.mp3 in Resources */,
+				7CF40ED4243F6A8B00C2F351 /* BalooThambi2-Medium.ttf in Resources */,
 				7C325092243C24560094F45C /* Main.storyboard in Resources */,
 				7C32509F243C65D50094F45C /* Relax.storyboard in Resources */,
 			);
@@ -173,8 +229,8 @@
 			files = (
 				7C32508F243C24560094F45C /* ViewController.swift in Sources */,
 				7C3250A7243C67300094F45C /* HomeVC.swift in Sources */,
+				7CF40EDC243F7AA100C2F351 /* MusicVC.swift in Sources */,
 				7C3250A5243C66DE0094F45C /* RelaxVC.swift in Sources */,
-				7CE1F30B243F380100A15787 /* HomeVCMusic.swift in Sources */,
 				7C32508B243C24560094F45C /* AppDelegate.swift in Sources */,
 				7C32508D243C24560094F45C /* SceneDelegate.swift in Sources */,
 			);
@@ -197,6 +253,14 @@
 				7C325096243C24590094F45C /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		7CE1F30E243F47AE00A15787 /* Home.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7CE1F30D243F47AE00A15787 /* Base */,
+			);
+			name = Home.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
