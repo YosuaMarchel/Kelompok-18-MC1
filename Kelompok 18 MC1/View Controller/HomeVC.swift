@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import AVFoundation
 
 class HomeVC: UIViewController {
     
@@ -27,6 +28,9 @@ class HomeVC: UIViewController {
     var resumeTapped = false
     var progress = Progress(totalUnitCount: 0)
     
+    //for Music
+    var audioPlayer = AVAudioPlayer()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         timerLabel.layer.cornerRadius = 20
@@ -42,39 +46,38 @@ class HomeVC: UIViewController {
     }
     
     @IBAction func sliderValueChange(_ sender: UISlider) {
-        //        let currentValue = Int(sender.value)
-        
         let currentValue = Int64(sender.value) * 60
         seconds = currentValue
         timerLabel.text = timeString(time: TimeInterval(seconds))
-        
     }
     
     @IBAction func startButtonTapped(_ sender: UIButton) {
-        timerProgress.isHidden = false
-        slider.isHidden = true
-        startButton.isEnabled = false
-        startButton.isHidden = true
-        topTextLabel.text = "Take a nap"
-        nappyImage.image = UIImage(named: "NappyRevisi-5")
-        
-        if isTimerRunning == false {
-            runTimer()
-            
-            //progress bar setting
-            self.progress = Progress(totalUnitCount: seconds)
-            timerProgress.progress = 0.0
-            self.progress.completedUnitCount = 0
-            Timer.scheduledTimer(withTimeInterval: 1, repeats: true) { (timer) in
-                guard self.progress.isFinished == false else {
-                    timer.invalidate()
-                    return
+        if seconds == 0 {
+            showAlertTimerNotSet()
+        }else{
+            timerProgress.isHidden = false
+            slider.isHidden = true
+            startButton.isEnabled = false
+            startButton.isHidden = true
+            topTextLabel.text = "Take a nap"
+            nappyImage.image = UIImage(named: "NappyRevisi-5")
+            if isTimerRunning == false {
+                runTimer()
+                
+                //progress bar setting
+                self.progress = Progress(totalUnitCount: seconds)
+                timerProgress.progress = 0.0
+                self.progress.completedUnitCount = 0
+                Timer.scheduledTimer(withTimeInterval: 1, repeats: true) { (timer) in
+                    guard self.progress.isFinished == false else {
+                        timer.invalidate()
+                        return
+                    }
+                    self.progress.completedUnitCount += 1
+                    self.timerProgress.setProgress(Float(self.progress.fractionCompleted), animated: true)
                 }
-                self.progress.completedUnitCount += 1
-                self.timerProgress.setProgress(Float(self.progress.fractionCompleted), animated: true)
             }
         }
-        
         slider.value = Float(seconds)/60
     }
     
@@ -95,6 +98,7 @@ class HomeVC: UIViewController {
             nappyImage.image = UIImage(named: "NappyRevisi-6")
         }
     }
+    
     @IBAction func resumeButtonTapped(_ sender: UIButton) {
         if self.resumeTapped == true {
             runTimer()
@@ -133,8 +137,20 @@ class HomeVC: UIViewController {
     @objc func updateTimer() {
         if seconds < 1 {
             timer.invalidate()
-            //Send alert to indicate "time's up!"
             nappyImage.image = UIImage(named: "NappyRevisi-6")
+            
+            //Send alert to indicate "time's up!"
+            showAlertTimesUp()
+            
+            //play alarm sound
+//            let path = Bundle.main.path(forResource: "bensound-creativeminds", ofType: "mp3")!
+//            let url = URL(fileURLWithPath: path)
+//            do {
+//                audioPlayer =  try AVAudioPlayer(contentsOf: url)
+//            } catch {
+//                // can't load file
+//            }
+//            audioPlayer.play()
         } else {
             seconds -= 1
             timerLabel.text = timeString(time: TimeInterval(seconds))
@@ -145,6 +161,21 @@ class HomeVC: UIViewController {
         let minutes = Int(time) / 60 % 60
         let seconds = Int(time) % 60
         return String(format:"%02i:%02i", minutes, seconds)
+    }
+    
+    //allert setting
+    func showAlertTimerNotSet() {
+        let alert = UIAlertController(title: "Message", message: "Please set the timer", preferredStyle: .alert)
+        let action = UIAlertAction(title: "Ok", style: .cancel, handler: nil)
+        alert.addAction(action)
+        self.present(alert, animated: true, completion: nil)
+    }
+    
+    func showAlertTimesUp() {
+        let alert = UIAlertController(title: "Message", message: "Come on wake up!", preferredStyle: .alert)
+        let action = UIAlertAction(title: "Ok", style: .cancel, handler: nil)
+        alert.addAction(action)
+        self.present(alert, animated: true, completion: nil)
     }
     
 }

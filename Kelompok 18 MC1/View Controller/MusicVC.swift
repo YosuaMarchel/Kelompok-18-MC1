@@ -13,7 +13,6 @@ class MusicVC: UIViewController {
     
     //for Music
     var audioPlayer = AVAudioPlayer()
-    var isPlaying = false
     
     override func viewDidLoad() {
         super.viewDidLoad()

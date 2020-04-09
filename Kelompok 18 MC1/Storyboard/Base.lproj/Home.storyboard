@@ -175,6 +175,14 @@
             </objects>
             <point key="canvasLocation" x="137.68115942028987" y="137.94642857142856"/>
         </scene>
+        <!--Relax-->
+        <scene sceneID="L0X-63-PcU">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Relax" id="dPV-nh-wfa" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="OBe-ww-3pp" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="185" y="534"/>
+        </scene>
         <!--MusicVC-->
         <scene sceneID="Oig-KJ-URq">
             <objects>
