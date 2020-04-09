@@ -17,6 +17,7 @@
 		7C3250A2243C66880094F45C /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7C3250A1243C66880094F45C /* Home.storyboard */; };
 		7C3250A5243C66DE0094F45C /* RelaxVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C3250A4243C66DE0094F45C /* RelaxVC.swift */; };
 		7C3250A7243C67300094F45C /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C3250A6243C67300094F45C /* HomeVC.swift */; };
+		7CE1F30B243F380100A15787 /* HomeVCMusic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CE1F30A243F380100A15787 /* HomeVCMusic.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		7C3250A1243C66880094F45C /* Home.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
 		7C3250A4243C66DE0094F45C /* RelaxVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RelaxVC.swift; sourceTree = "<group>"; };
 		7C3250A6243C67300094F45C /* HomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
+		7CE1F30A243F380100A15787 /* HomeVCMusic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVCMusic.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,6 +93,7 @@
 				7C32508E243C24560094F45C /* ViewController.swift */,
 				7C3250A4243C66DE0094F45C /* RelaxVC.swift */,
 				7C3250A6243C67300094F45C /* HomeVC.swift */,
+				7CE1F30A243F380100A15787 /* HomeVCMusic.swift */,
 			);
 			path = "View Controller";
 			sourceTree = "<group>";
@@ -171,6 +174,7 @@
 				7C32508F243C24560094F45C /* ViewController.swift in Sources */,
 				7C3250A7243C67300094F45C /* HomeVC.swift in Sources */,
 				7C3250A5243C66DE0094F45C /* RelaxVC.swift in Sources */,
+				7CE1F30B243F380100A15787 /* HomeVCMusic.swift in Sources */,
 				7C32508B243C24560094F45C /* AppDelegate.swift in Sources */,
 				7C32508D243C24560094F45C /* SceneDelegate.swift in Sources */,
 			);
@@ -318,7 +322,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 7V5927PPJS;
-				INFOPLIST_FILE = "Kelompok 18 MC1 Napp/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/Kelompok 18 MC1/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -336,7 +340,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 7V5927PPJS;
-				INFOPLIST_FILE = "Kelompok 18 MC1 Napp/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/Kelompok 18 MC1/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
