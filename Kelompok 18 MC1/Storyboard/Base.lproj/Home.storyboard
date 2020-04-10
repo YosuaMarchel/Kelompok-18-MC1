@@ -10,6 +10,9 @@
         <array key="BalooThambi2-Medium.ttf">
             <string>BalooThambi2-Medium</string>
         </array>
+        <array key="BalooThambi2-Regular.ttf">
+            <string>BalooThambi2-Regular</string>
+        </array>
         <array key="BalooThambi2-SemiBold.ttf">
             <string>BalooThambi2-SemiBold</string>
         </array>
@@ -18,7 +21,7 @@
         <!--HomeVC-->
         <scene sceneID="MJ4-pB-dEM">
             <objects>
-                <viewController id="JwQ-Nm-mcK" customClass="HomeVC" customModule="Kelompok_18_MC1" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="HomeVC" id="JwQ-Nm-mcK" customClass="HomeVC" customModule="Kelompok_18_MC1" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="oiy-BE-Q9R">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -41,12 +44,18 @@
                                     <constraint firstItem="mo0-F3-IJZ" firstAttribute="leading" secondItem="E8h-UU-7qE" secondAttribute="leading" constant="53" id="x3b-sm-bJ4"/>
                                 </constraints>
                             </view>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="NappyRevisi-8" translatesAutoresizingMaskIntoConstraints="NO" id="59e-XD-jWN">
-                                <rect key="frame" x="42" y="277" width="331" height="343"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="NappyRevisi-8" translatesAutoresizingMaskIntoConstraints="NO" id="59e-XD-jWN">
+                                <rect key="frame" x="42" y="277" width="330" height="342"/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="00:00" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MEj-VQ-TgM">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Artboard" translatesAutoresizingMaskIntoConstraints="NO" id="tmF-yp-Pbm">
                                 <rect key="frame" x="53" y="152" width="308" height="120"/>
-                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="308" id="smU-Ms-wfP"/>
+                                    <constraint firstAttribute="height" constant="120" id="y9s-EU-vQJ"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="00:00" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MEj-VQ-TgM">
+                                <rect key="frame" x="53" y="152" width="308" height="120"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="120" id="sZP-ai-Lk8"/>
                                 </constraints>
@@ -59,7 +68,7 @@
                                 <constraints>
                                     <constraint firstAttribute="height" constant="29" id="quI-t9-Nr6"/>
                                 </constraints>
-                                <color key="minimumTrackTintColor" red="0.95294117649999999" green="0.68235294120000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <color key="minimumTrackTintColor" red="0.9882352941176471" green="0.71764705882352942" blue="0.070588235294117646" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <connections>
                                     <action selector="sliderValueChange:" destination="JwQ-Nm-mcK" eventType="valueChanged" id="i39-Nj-o3F"/>
                                 </connections>
@@ -77,10 +86,10 @@
                             </tabBar>
                             <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" misplaced="YES" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="5to-MU-Lcy">
                                 <rect key="frame" x="53" y="641" width="308" height="3"/>
-                                <color key="progressTintColor" red="1" green="0.71874603599999998" blue="0.37481329810000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <color key="progressTintColor" red="0.9882352941176471" green="0.71764705882352942" blue="0.070588235294117646" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                             </progressView>
                             <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5Hm-Yp-Opb">
-                                <rect key="frame" x="202" y="683" width="139" height="70"/>
+                                <rect key="frame" x="200" y="683" width="139" height="70"/>
                                 <state key="normal" image="ResetButton"/>
                                 <connections>
                                     <action selector="resetButtonTapped:" destination="JwQ-Nm-mcK" eventType="touchUpInside" id="95u-7l-8Gu"/>
@@ -125,6 +134,7 @@
                             <constraint firstItem="vfk-nk-3kn" firstAttribute="leading" secondItem="5to-MU-Lcy" secondAttribute="leading" id="0S4-2b-9Y6"/>
                             <constraint firstItem="5to-MU-Lcy" firstAttribute="centerX" secondItem="rnl-G6-yZm" secondAttribute="centerX" id="0gL-XT-RgG"/>
                             <constraint firstItem="59e-XD-jWN" firstAttribute="leading" secondItem="Ewi-Gz-CMG" secondAttribute="leading" constant="42" id="0iN-XG-GNu"/>
+                            <constraint firstItem="Ewi-Gz-CMG" firstAttribute="trailing" secondItem="tmF-yp-Pbm" secondAttribute="trailing" constant="53" id="1wd-TK-DgR"/>
                             <constraint firstItem="vfk-nk-3kn" firstAttribute="trailing" secondItem="5to-MU-Lcy" secondAttribute="trailing" id="4lp-cx-0ls"/>
                             <constraint firstItem="MEj-VQ-TgM" firstAttribute="trailing" secondItem="5to-MU-Lcy" secondAttribute="trailing" id="6kA-Hw-g6j"/>
                             <constraint firstItem="rnl-G6-yZm" firstAttribute="centerX" secondItem="x49-eL-3Pa" secondAttribute="centerX" id="70s-Oi-eI5"/>
@@ -139,7 +149,7 @@
                             <constraint firstItem="E8h-UU-7qE" firstAttribute="trailing" secondItem="duO-sn-781" secondAttribute="trailing" id="MTF-00-H1b"/>
                             <constraint firstItem="duO-sn-781" firstAttribute="leading" secondItem="Ewi-Gz-CMG" secondAttribute="leading" id="POw-w7-Mvl"/>
                             <constraint firstItem="E8h-UU-7qE" firstAttribute="centerX" secondItem="oiy-BE-Q9R" secondAttribute="centerX" id="Prr-DR-53X"/>
-                            <constraint firstItem="5Hm-Yp-Opb" firstAttribute="leading" secondItem="Ewi-Gz-CMG" secondAttribute="leading" constant="202" id="SGR-NK-4L6"/>
+                            <constraint firstItem="5Hm-Yp-Opb" firstAttribute="leading" secondItem="Ewi-Gz-CMG" secondAttribute="leading" constant="200" id="SGR-NK-4L6"/>
                             <constraint firstItem="5to-MU-Lcy" firstAttribute="top" secondItem="59e-XD-jWN" secondAttribute="bottom" constant="21" id="Tt3-eX-77d"/>
                             <constraint firstItem="E8h-UU-7qE" firstAttribute="top" secondItem="oiy-BE-Q9R" secondAttribute="topMargin" constant="-44" id="Ug0-1T-UVh"/>
                             <constraint firstItem="E8h-UU-7qE" firstAttribute="leading" secondItem="duO-sn-781" secondAttribute="leading" id="VMv-yE-nq8"/>
@@ -147,14 +157,17 @@
                             <constraint firstItem="x49-eL-3Pa" firstAttribute="centerX" secondItem="duO-sn-781" secondAttribute="centerX" id="Wzz-4h-ROC"/>
                             <constraint firstItem="MEj-VQ-TgM" firstAttribute="leading" secondItem="5to-MU-Lcy" secondAttribute="leading" id="YVI-x5-JjA"/>
                             <constraint firstItem="5Hm-Yp-Opb" firstAttribute="top" secondItem="vfk-nk-3kn" secondAttribute="bottom" constant="26" id="Yp3-S8-RU4"/>
+                            <constraint firstItem="tmF-yp-Pbm" firstAttribute="top" secondItem="Ewi-Gz-CMG" secondAttribute="top" constant="108" id="asB-Jd-2tw"/>
                             <constraint firstItem="x49-eL-3Pa" firstAttribute="leading" secondItem="Ewi-Gz-CMG" secondAttribute="leading" constant="158" id="fYU-hr-Lce"/>
                             <constraint firstItem="59e-XD-jWN" firstAttribute="centerX" secondItem="5to-MU-Lcy" secondAttribute="centerX" id="gCY-dM-aWw"/>
                             <constraint firstItem="MEj-VQ-TgM" firstAttribute="leading" secondItem="Ewi-Gz-CMG" secondAttribute="leading" constant="53" id="gEi-ak-UGl"/>
                             <constraint firstItem="rnl-G6-yZm" firstAttribute="top" secondItem="Yi8-IQ-Uo5" secondAttribute="top" id="gaY-CV-PTS"/>
+                            <constraint firstItem="59e-XD-jWN" firstAttribute="top" secondItem="tmF-yp-Pbm" secondAttribute="bottom" constant="5" id="iv1-R0-OYd"/>
                             <constraint firstItem="59e-XD-jWN" firstAttribute="top" secondItem="MEj-VQ-TgM" secondAttribute="bottom" constant="5" id="jwJ-dC-9FX"/>
-                            <constraint firstItem="Ewi-Gz-CMG" firstAttribute="trailing" secondItem="5Hm-Yp-Opb" secondAttribute="trailing" constant="73" id="nbg-bu-gFR"/>
+                            <constraint firstItem="Ewi-Gz-CMG" firstAttribute="trailing" secondItem="5Hm-Yp-Opb" secondAttribute="trailing" constant="75" id="nbg-bu-gFR"/>
                             <constraint firstItem="YtK-RM-ue8" firstAttribute="top" secondItem="Yi8-IQ-Uo5" secondAttribute="top" id="pe1-pZ-V6p"/>
                             <constraint firstItem="vfk-nk-3kn" firstAttribute="top" secondItem="59e-XD-jWN" secondAttribute="bottom" constant="8" id="wOT-vH-DVW"/>
+                            <constraint firstItem="tmF-yp-Pbm" firstAttribute="leading" secondItem="Ewi-Gz-CMG" secondAttribute="leading" constant="53" id="xjL-xp-Jzj"/>
                             <constraint firstItem="vfk-nk-3kn" firstAttribute="centerY" secondItem="5to-MU-Lcy" secondAttribute="centerY" id="zk6-SL-scZ"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Ewi-Gz-CMG"/>
@@ -166,6 +179,7 @@
                         <outlet property="resumeButton" destination="YtK-RM-ue8" id="BHX-Ht-vgD"/>
                         <outlet property="slider" destination="vfk-nk-3kn" id="2cA-GD-jJE"/>
                         <outlet property="startButton" destination="Yi8-IQ-Uo5" id="wOC-qM-HEY"/>
+                        <outlet property="timerBackgroundImage" destination="tmF-yp-Pbm" id="1E4-Bq-1SR"/>
                         <outlet property="timerLabel" destination="MEj-VQ-TgM" id="Ool-BQ-uw5"/>
                         <outlet property="timerProgress" destination="5to-MU-Lcy" id="N0k-Dr-Ie7"/>
                         <outlet property="topTextLabel" destination="mo0-F3-IJZ" id="ime-wa-s1n"/>
@@ -192,7 +206,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bJl-ot-Qmx">
-                                <rect key="frame" x="165" y="223" width="95" height="49"/>
+                                <rect key="frame" x="0.0" y="95" width="414" height="97"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <accessibility key="accessibilityConfiguration" identifier="music2Button"/>
                                 <fontDescription key="fontDescription" name="BalooThambi2-Medium" family="Baloo Thambi 2" pointSize="24"/>
@@ -204,7 +218,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lD8-1n-6RO">
-                                <rect key="frame" x="165" y="319" width="95" height="49"/>
+                                <rect key="frame" x="0.0" y="191" width="414" height="97"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <accessibility key="accessibilityConfiguration" identifier="music3Button"/>
                                 <fontDescription key="fontDescription" name="BalooThambi2-Medium" family="Baloo Thambi 2" pointSize="24"/>
@@ -216,7 +230,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6EY-gz-e6b">
-                                <rect key="frame" x="166" y="127" width="92" height="49"/>
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="96"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <accessibility key="accessibilityConfiguration" identifier="music1Button"/>
                                 <fontDescription key="fontDescription" name="BalooThambi2-Medium" family="Baloo Thambi 2" pointSize="24"/>
@@ -227,8 +241,32 @@
                                     <action selector="playAndStopMusic:" destination="kmH-vW-aeR" eventType="touchUpInside" id="Jlr-cI-HM2"/>
                                 </connections>
                             </button>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="gva-3f-nWx">
+                                <rect key="frame" x="0.0" y="287" width="414" height="1"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="aeu-VF-4an">
+                                <rect key="frame" x="0.0" y="191" width="414" height="1"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="XwT-GE-fBx">
+                                <rect key="frame" x="0.0" y="95" width="414" height="1"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ENY-hD-mOT">
+                                <rect key="frame" x="192" y="759" width="41" height="39"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="BalooThambi2-Regular" family="Baloo Thambi 2" pointSize="17"/>
+                                <state key="normal" title="Close"/>
+                                <connections>
+                                    <action selector="closeButtonTapped:" destination="kmH-vW-aeR" eventType="touchUpInside" id="GH3-r3-9Sx"/>
+                                </connections>
+                            </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dgQ-Vz-Bit">
-                                <rect key="frame" x="161" y="415" width="102" height="49"/>
+                                <rect key="frame" x="0.0" y="287" width="414" height="97"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <accessibility key="accessibilityConfiguration" identifier="musicOffButton"/>
                                 <fontDescription key="fontDescription" name="BalooThambi2-Medium" family="Baloo Thambi 2" pointSize="24"/>
@@ -251,6 +289,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="Artboard" width="570" height="407"/>
         <image name="NappyRevisi-8" width="4500" height="4500"/>
         <image name="ResetButton" width="126" height="50"/>
         <image name="ResumeButton" width="170" height="70"/>

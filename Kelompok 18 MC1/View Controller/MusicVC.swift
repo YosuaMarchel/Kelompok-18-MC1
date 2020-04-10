@@ -56,5 +56,9 @@ class MusicVC: UIViewController {
         
         
     }
+    @IBAction func closeButtonTapped(_ sender: UIButton) {
+        navigationController?.popViewController(animated: true)
+        dismiss(animated: true, completion: nil)
+    }
     
 }
