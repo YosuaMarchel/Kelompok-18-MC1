@@ -89,7 +89,7 @@
                                 <color key="progressTintColor" red="0.9882352941176471" green="0.71764705882352942" blue="0.070588235294117646" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                             </progressView>
                             <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5Hm-Yp-Opb">
-                                <rect key="frame" x="200" y="683" width="139" height="70"/>
+                                <rect key="frame" x="201" y="683" width="139" height="70"/>
                                 <state key="normal" image="ResetButton"/>
                                 <connections>
                                     <action selector="resetButtonTapped:" destination="JwQ-Nm-mcK" eventType="touchUpInside" id="95u-7l-8Gu"/>
@@ -99,14 +99,13 @@
                                 <rect key="frame" x="97" y="688" width="220" height="69.999999999999773"/>
                                 <state key="normal" image="StopButton"/>
                                 <connections>
-                                    <action selector="pauseButtonTapped:" destination="JwQ-Nm-mcK" eventType="touchUpInside" id="DSo-qS-U6U"/>
+                                    <action selector="stopButtonTapped:" destination="JwQ-Nm-mcK" eventType="touchUpInside" id="DSo-qS-U6U"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YtK-RM-ue8">
-                                <rect key="frame" x="73" y="688" width="170" height="70"/>
+                                <rect key="frame" x="74" y="688" width="170" height="70"/>
                                 <state key="normal" image="ResumeButton"/>
                                 <connections>
-                                    <action selector="pauseButtonTapped:" destination="JwQ-Nm-mcK" eventType="touchUpInside" id="1cb-BW-8Cv"/>
                                     <action selector="resumeButtonTapped:" destination="JwQ-Nm-mcK" eventType="touchUpInside" id="w6R-Xc-ada"/>
                                 </connections>
                             </button>
@@ -141,7 +140,7 @@
                             <constraint firstItem="duO-sn-781" firstAttribute="bottom" secondItem="Ewi-Gz-CMG" secondAttribute="bottom" id="7wk-i8-EPy"/>
                             <constraint firstItem="MEj-VQ-TgM" firstAttribute="top" secondItem="Ewi-Gz-CMG" secondAttribute="top" constant="108" id="BmG-fs-gyL"/>
                             <constraint firstItem="duO-sn-781" firstAttribute="top" secondItem="x49-eL-3Pa" secondAttribute="bottom" constant="13" id="EWm-JW-IpH"/>
-                            <constraint firstItem="YtK-RM-ue8" firstAttribute="leading" secondItem="Ewi-Gz-CMG" secondAttribute="leading" constant="73" id="FnN-sf-krk"/>
+                            <constraint firstItem="YtK-RM-ue8" firstAttribute="leading" secondItem="Ewi-Gz-CMG" secondAttribute="leading" constant="74" id="FnN-sf-krk"/>
                             <constraint firstItem="59e-XD-jWN" firstAttribute="centerY" secondItem="oiy-BE-Q9R" secondAttribute="centerY" id="GBV-9D-Q1N"/>
                             <constraint firstItem="x49-eL-3Pa" firstAttribute="top" secondItem="5Hm-Yp-Opb" secondAttribute="bottom" constant="8" id="IaG-pB-MYg"/>
                             <constraint firstItem="rnl-G6-yZm" firstAttribute="leading" secondItem="Yi8-IQ-Uo5" secondAttribute="leading" id="Kpe-ge-RvE"/>
@@ -149,7 +148,7 @@
                             <constraint firstItem="E8h-UU-7qE" firstAttribute="trailing" secondItem="duO-sn-781" secondAttribute="trailing" id="MTF-00-H1b"/>
                             <constraint firstItem="duO-sn-781" firstAttribute="leading" secondItem="Ewi-Gz-CMG" secondAttribute="leading" id="POw-w7-Mvl"/>
                             <constraint firstItem="E8h-UU-7qE" firstAttribute="centerX" secondItem="oiy-BE-Q9R" secondAttribute="centerX" id="Prr-DR-53X"/>
-                            <constraint firstItem="5Hm-Yp-Opb" firstAttribute="leading" secondItem="Ewi-Gz-CMG" secondAttribute="leading" constant="200" id="SGR-NK-4L6"/>
+                            <constraint firstItem="5Hm-Yp-Opb" firstAttribute="leading" secondItem="Ewi-Gz-CMG" secondAttribute="leading" constant="201" id="SGR-NK-4L6"/>
                             <constraint firstItem="5to-MU-Lcy" firstAttribute="top" secondItem="59e-XD-jWN" secondAttribute="bottom" constant="21" id="Tt3-eX-77d"/>
                             <constraint firstItem="E8h-UU-7qE" firstAttribute="top" secondItem="oiy-BE-Q9R" secondAttribute="topMargin" constant="-44" id="Ug0-1T-UVh"/>
                             <constraint firstItem="E8h-UU-7qE" firstAttribute="leading" secondItem="duO-sn-781" secondAttribute="leading" id="VMv-yE-nq8"/>
@@ -164,7 +163,7 @@
                             <constraint firstItem="rnl-G6-yZm" firstAttribute="top" secondItem="Yi8-IQ-Uo5" secondAttribute="top" id="gaY-CV-PTS"/>
                             <constraint firstItem="59e-XD-jWN" firstAttribute="top" secondItem="tmF-yp-Pbm" secondAttribute="bottom" constant="5" id="iv1-R0-OYd"/>
                             <constraint firstItem="59e-XD-jWN" firstAttribute="top" secondItem="MEj-VQ-TgM" secondAttribute="bottom" constant="5" id="jwJ-dC-9FX"/>
-                            <constraint firstItem="Ewi-Gz-CMG" firstAttribute="trailing" secondItem="5Hm-Yp-Opb" secondAttribute="trailing" constant="75" id="nbg-bu-gFR"/>
+                            <constraint firstItem="Ewi-Gz-CMG" firstAttribute="trailing" secondItem="5Hm-Yp-Opb" secondAttribute="trailing" constant="74" id="nbg-bu-gFR"/>
                             <constraint firstItem="YtK-RM-ue8" firstAttribute="top" secondItem="Yi8-IQ-Uo5" secondAttribute="top" id="pe1-pZ-V6p"/>
                             <constraint firstItem="vfk-nk-3kn" firstAttribute="top" secondItem="59e-XD-jWN" secondAttribute="bottom" constant="8" id="wOT-vH-DVW"/>
                             <constraint firstItem="tmF-yp-Pbm" firstAttribute="leading" secondItem="Ewi-Gz-CMG" secondAttribute="leading" constant="53" id="xjL-xp-Jzj"/>
@@ -174,11 +173,11 @@
                     </view>
                     <connections>
                         <outlet property="nappyImage" destination="59e-XD-jWN" id="3OX-HX-lMj"/>
-                        <outlet property="pauseButton" destination="rnl-G6-yZm" id="WVJ-Lp-9ZB"/>
                         <outlet property="resetButton" destination="5Hm-Yp-Opb" id="ksb-Gz-fqg"/>
                         <outlet property="resumeButton" destination="YtK-RM-ue8" id="BHX-Ht-vgD"/>
                         <outlet property="slider" destination="vfk-nk-3kn" id="2cA-GD-jJE"/>
                         <outlet property="startButton" destination="Yi8-IQ-Uo5" id="wOC-qM-HEY"/>
+                        <outlet property="stopButton" destination="rnl-G6-yZm" id="WVJ-Lp-9ZB"/>
                         <outlet property="timerBackgroundImage" destination="tmF-yp-Pbm" id="1E4-Bq-1SR"/>
                         <outlet property="timerLabel" destination="MEj-VQ-TgM" id="Ool-BQ-uw5"/>
                         <outlet property="timerProgress" destination="5to-MU-Lcy" id="N0k-Dr-Ie7"/>

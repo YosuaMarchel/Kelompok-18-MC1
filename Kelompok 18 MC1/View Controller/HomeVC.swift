@@ -12,7 +12,7 @@ import AVFoundation
 class HomeVC: UIViewController {
     
     @IBOutlet weak var topTextLabel: UILabel!
-    @IBOutlet weak var pauseButton: UIButton!
+    @IBOutlet weak var stopButton: UIButton!
     @IBOutlet weak var startButton: UIButton!
     @IBOutlet weak var resumeButton: UIButton!
     @IBOutlet weak var resetButton: UIButton!
@@ -38,11 +38,13 @@ class HomeVC: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        //label and image
         topTextLabel.text = "Ready to nap?"
         timerLabel.text = "Get into a comfortable spot before we start."
         timerLabel.font = timerLabel.font.withSize(21)
         nappyImage.image = UIImage(named: "NappyRevisi-1")
-        timerBackgroundImage.layer.cornerRadius = 20
+        timerBackgroundImage.layer.cornerRadius = 30
         
         //progress bar
         timerProgress.transform = timerProgress.transform.scaledBy(x: 1, y: 3)
@@ -52,8 +54,8 @@ class HomeVC: UIViewController {
         slider.isHidden = false
         
         //buttons
-        pauseButton.isEnabled = false
-        pauseButton.isHidden = true
+        stopButton.isEnabled = false
+        stopButton.isHidden = true
         resumeButton.isHidden = true
         resetButton.isHidden = true
     }
@@ -68,8 +70,8 @@ class HomeVC: UIViewController {
     }
     
     @IBAction func startButtonTapped(_ sender: UIButton) {
-        totalTime = seconds
-        if seconds == 0 {
+        totalTime = seconds //for progress bar
+        if seconds == 0 {  //check if the timer set or not
             showAlertTimerNotSet()
         }else{
             timerProgress.isHidden = false
@@ -85,25 +87,21 @@ class HomeVC: UIViewController {
                 runTimer()
             }
         }
-        slider.value = Float(seconds)/60
     }
     
-    func runTimer() {
-        timer = Timer.scheduledTimer(timeInterval: 1, target: self,   selector: (#selector(HomeVC.updateTimer)), userInfo: nil, repeats: true)
-        isTimerRunning = true
-        pauseButton.isEnabled = true
-        pauseButton.isHidden = false
-    }
-    
-    @IBAction func pauseButtonTapped(_ sender: UIButton) {
+    @IBAction func stopButtonTapped(_ sender: UIButton) {
         if self.resumeTapped == false {
-            timer.invalidate()
-            self.resumeTapped = true
-            resumeButton.isHidden = false
-            resumeButton.isEnabled = true
-            resetButton.isHidden = false
-            pauseButton.isHidden = true
-            nappyImage.image = UIImage(named: "NappyRevisi-8")
+            if seconds < 1 {
+                resetHome()
+            }else{
+                timer.invalidate()
+                self.resumeTapped = true
+                resumeButton.isHidden = false
+                resumeButton.isEnabled = true
+                resetButton.isHidden = false
+                stopButton.isHidden = true
+                nappyImage.image = UIImage(named: "NappyRevisi-8")
+            }
         }
     }
     
@@ -113,37 +111,13 @@ class HomeVC: UIViewController {
             self.resumeTapped = false
             resumeButton.isHidden = true
             resetButton.isHidden = true
-            pauseButton.isHidden = false
+            stopButton.isHidden = false
             nappyImage.image = UIImage(named: "NappyRevisi-5")
         }
     }
     
     @IBAction func resetButtonTapped(_ sender: UIButton) {
-        timer.invalidate()
-        seconds = 0
-        slider.value = 0
-        timerLabel.text = timeString(time: TimeInterval(seconds))
-        isTimerRunning = false
-        resumeTapped = false
-        topTextLabel.text = "Ready to nap?"
-        timerLabel.text = "Get into a comfortable spot before we start."
-        timerLabel.font = timerLabel.font.withSize(21)
-        nappyImage.image = UIImage(named: "NappyRevisi-1")
-        audioPlayer.stop()
-        
-        //timer progress reset
-        timerProgress.progress = 0.0
-        self.progress.completedUnitCount = 0
-        
-        //button, slider, label setting
-        pauseButton.isEnabled = false
-        pauseButton.isHidden = true
-        startButton.isEnabled = true
-        startButton.isHidden = false
-        resetButton.isHidden = true
-        resumeButton.isHidden = true
-        slider.isHidden = false
-        timerProgress.isHidden = true
+        resetHome()
     }
     
     @objc func updateTimer() {
@@ -153,7 +127,7 @@ class HomeVC: UIViewController {
             topTextLabel.text = "Time's up!"
             
             //Send alert to indicate "time's up!"
-            showAlertTimesUp()
+            //showAlertTimesUp()
             
             //play alarm sound
             let path = Bundle.main.path(forResource: "bensound-creativeminds", ofType: "mp3")!
@@ -164,12 +138,6 @@ class HomeVC: UIViewController {
                 print("error")
             }
             audioPlayer.play()
-            
-            //set button
-            pauseButton.isHidden = true
-            resumeButton.isHidden = false
-            resumeButton.isEnabled = false
-            resetButton.isHidden = false
         } else {
             seconds -= 1
             timerLabel.text = timeString(time: TimeInterval(seconds))
@@ -180,10 +148,49 @@ class HomeVC: UIViewController {
         }
     }
     
+    func runTimer() {
+        timer = Timer.scheduledTimer(timeInterval: 1, target: self,   selector: (#selector(HomeVC.updateTimer)), userInfo: nil, repeats: true)
+        isTimerRunning = true
+        stopButton.isEnabled = true
+        stopButton.isHidden = false
+    }
+    
     func timeString(time:TimeInterval) -> String {
         let minutes = Int(time) / 60 % 60
         let seconds = Int(time) % 60
         return String(format:"%02i:%02i", minutes, seconds)
+    }
+    
+    func resetHome(){
+        timer.invalidate()
+        audioPlayer.stop()
+        
+        //variable reset
+        seconds = 0
+        slider.value = 0
+        isTimerRunning = false
+        resumeTapped = false
+        
+        //label and image reset
+        timerLabel.text = timeString(time: TimeInterval(seconds))
+        topTextLabel.text = "Ready to nap?"
+        timerLabel.text = "Get into a comfortable spot before we start."
+        timerLabel.font = timerLabel.font.withSize(21)
+        nappyImage.image = UIImage(named: "NappyRevisi-1")
+        
+        //timer progress reset
+        timerProgress.progress = 0.0
+        self.progress.completedUnitCount = 0
+        
+        //button, slider, label setting
+        stopButton.isEnabled = false
+        stopButton.isHidden = true
+        startButton.isEnabled = true
+        startButton.isHidden = false
+        resetButton.isHidden = true
+        resumeButton.isHidden = true
+        slider.isHidden = false
+        timerProgress.isHidden = true
     }
     
     //allert setting
@@ -194,11 +201,11 @@ class HomeVC: UIViewController {
         self.present(alert, animated: true, completion: nil)
     }
     
-    func showAlertTimesUp() {
-        let alert = UIAlertController(title: "Message", message: "Come on wake up!", preferredStyle: .alert)
-        let action = UIAlertAction(title: "Ok", style: .cancel, handler: nil)
-        alert.addAction(action)
-        self.present(alert, animated: true, completion: nil)
-    }
+//    func showAlertTimesUp() {
+//        let alert = UIAlertController(title: "Message", message: "Come on wake up!", preferredStyle: .alert)
+//        let action = UIAlertAction(title: "Ok", style: .cancel, handler: nil)
+//        alert.addAction(action)
+//        self.present(alert, animated: true, completion: nil)
+//    }
     
 }
