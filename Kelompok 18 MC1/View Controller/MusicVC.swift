@@ -9,10 +9,17 @@
 import UIKit
 import AVFoundation
 
+protocol ChooseSongDelegate {
+    func chooseSong(title: String)
+}
+
 class MusicVC: UIViewController {
+        
+    var delegate: ChooseSongDelegate?
     
     //for Music
     var audioPlayer = AVAudioPlayer()
+    var choosenTitle: String = ""
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -21,44 +28,41 @@ class MusicVC: UIViewController {
     @IBAction func playAndStopMusic(_ sender: UIButton) {
         switch sender.accessibilityIdentifier {
         case "music1Button":
-            let path = Bundle.main.path(forResource: "bensound-summer", ofType: "mp3")!
-            let url = URL(fileURLWithPath: path)
-            do {
-                audioPlayer =  try AVAudioPlayer(contentsOf: url)
-            } catch {
-                // can't load file
-            }
+            addMusic(title: "bensound-summer")
             audioPlayer.play()
+            choosenTitle = "bensound-summer"
         case "music2Button":
-            let path = Bundle.main.path(forResource: "bensound-ukulele", ofType: "mp3")!
-            let url = URL(fileURLWithPath: path)
-            do {
-                audioPlayer =  try AVAudioPlayer(contentsOf: url)
-            } catch {
-                // can't load file
-            }
+            addMusic(title: "bensound-ukulele")
             audioPlayer.play()
+            choosenTitle = "bensound-ukulele"
         case "music3Button":
-            let path = Bundle.main.path(forResource: "bensound-creativeminds", ofType: "mp3")!
-            let url = URL(fileURLWithPath: path)
-            do {
-                audioPlayer =  try AVAudioPlayer(contentsOf: url)
-            } catch {
-                // can't load file
-            }
+            addMusic(title: "bensound-creativeminds")
             audioPlayer.play()
+            choosenTitle = "bensound-creativeminds"
         case "musicOffButton":
             audioPlayer.stop()
             audioPlayer.currentTime = 0
+            choosenTitle = ""
         default:
-            print("no music")
+            choosenTitle = ""
         }
         
         
     }
-    @IBAction func closeButtonTapped(_ sender: UIButton) {
-        navigationController?.popViewController(animated: true)
-        dismiss(animated: true, completion: nil)
+    @IBAction func chooseButtonTapped(_ sender: UIButton) {
+        let title = choosenTitle
+        delegate?.chooseSong(title: title)
+        //dismiss(animated: true, completion: nil)
+    }
+    
+    func addMusic (title: String){
+        let path = Bundle.main.path(forResource: title, ofType: "mp3")!
+        let url = URL(fileURLWithPath: path)
+        do {
+            self.audioPlayer =  try AVAudioPlayer(contentsOf: url)
+        } catch {
+            // can't load file
+        }
     }
     
 }

@@ -40,8 +40,8 @@ class HomeVC: UIViewController {
         super.viewDidLoad()
         
         //label and image
-        topTextLabel.text = "Ready to nap?"
-        timerLabel.text = "Get into a comfortable spot before we start."
+        topTextLabel.text = "Ready for napnap?"
+        timerLabel.text = "Get comfy before we nap. Worry not, Nappy will wake you up!"
         timerLabel.font = timerLabel.font.withSize(21)
         nappyImage.image = UIImage(named: "NappyRevisi-1")
         timerBackgroundImage.layer.cornerRadius = 30
@@ -64,7 +64,7 @@ class HomeVC: UIViewController {
         let currentValue = Int64(sender.value) * 60
         seconds = currentValue
         timerLabel.text = timeString(time: TimeInterval(seconds))
-        topTextLabel.text = "Set the timer"
+        topTextLabel.text = "How long will you nap?"
         nappyImage.image = UIImage(named: "NappyRevisi-8")
         timerLabel.font = timerLabel.font.withSize(36)
     }
@@ -78,7 +78,7 @@ class HomeVC: UIViewController {
             slider.isHidden = true
             startButton.isEnabled = false
             startButton.isHidden = true
-            topTextLabel.text = "Take a nap"
+            topTextLabel.text = "Sleep tight!"
             nappyImage.image = UIImage(named: "NappyRevisi-5")
             if isTimerRunning == false {
                 self.progress = Progress(totalUnitCount: totalTime)
@@ -101,6 +101,8 @@ class HomeVC: UIViewController {
                 resetButton.isHidden = false
                 stopButton.isHidden = true
                 nappyImage.image = UIImage(named: "NappyRevisi-8")
+                topTextLabel.text = "Wake up already?"
+                audioPlayer.pause()
             }
         }
     }
@@ -113,6 +115,8 @@ class HomeVC: UIViewController {
             resetButton.isHidden = true
             stopButton.isHidden = false
             nappyImage.image = UIImage(named: "NappyRevisi-5")
+            topTextLabel.text = "Sleep tight!"
+            audioPlayer.play()
         }
     }
     
@@ -124,7 +128,9 @@ class HomeVC: UIViewController {
         if seconds < 1 {
             timer.invalidate()
             nappyImage.image = UIImage(named: "NappyRevisi-6")
-            topTextLabel.text = "Time's up!"
+            topTextLabel.text = "Times up!"
+            timerLabel.text = "Wakey wakey, Sleepyhead!"
+            timerLabel.font = timerLabel.font.withSize(30)
             
             //Send alert to indicate "time's up!"
             //showAlertTimesUp()
@@ -173,8 +179,8 @@ class HomeVC: UIViewController {
         
         //label and image reset
         timerLabel.text = timeString(time: TimeInterval(seconds))
-        topTextLabel.text = "Ready to nap?"
-        timerLabel.text = "Get into a comfortable spot before we start."
+        topTextLabel.text = "Ready for napnap?"
+        timerLabel.text = "Get comfy before we nap. Worry not, Nappy will wake you up!"
         timerLabel.font = timerLabel.font.withSize(21)
         nappyImage.image = UIImage(named: "NappyRevisi-1")
         
@@ -193,19 +199,40 @@ class HomeVC: UIViewController {
         timerProgress.isHidden = true
     }
     
+    @IBAction func chooseMusicTapped(_ sender: UIButton) {
+        audioPlayer.stop()
+        let controller = UIStoryboard(name: "Home", bundle: nil).instantiateViewController(withIdentifier: "MusicVC") as! MusicVC
+        controller.delegate = self
+        
+        self.present(controller, animated: true, completion: nil)
+    }
+    
+    
     //allert setting
     func showAlertTimerNotSet() {
-        let alert = UIAlertController(title: "Message", message: "Please set the timer", preferredStyle: .alert)
+        let alert = UIAlertController(title: "Message", message: "Set the timer first!", preferredStyle: .alert)
         let action = UIAlertAction(title: "Ok", style: .cancel, handler: nil)
         alert.addAction(action)
         self.present(alert, animated: true, completion: nil)
     }
     
-//    func showAlertTimesUp() {
-//        let alert = UIAlertController(title: "Message", message: "Come on wake up!", preferredStyle: .alert)
-//        let action = UIAlertAction(title: "Ok", style: .cancel, handler: nil)
-//        alert.addAction(action)
-//        self.present(alert, animated: true, completion: nil)
-//    }
-    
+}
+
+extension HomeVC: ChooseSongDelegate {
+    func chooseSong(title: String) {
+        self.dismiss(animated: true) {
+            if title != ""{
+                let path = Bundle.main.path(forResource: title, ofType: "mp3")!
+                let url = URL(fileURLWithPath: path)
+                do {
+                    self.audioPlayer =  try AVAudioPlayer(contentsOf: url)
+                } catch {
+                    print("error")
+                }
+                self.audioPlayer.play()
+            }else{
+                self.audioPlayer.stop()
+            }
+        }
+    }
 }

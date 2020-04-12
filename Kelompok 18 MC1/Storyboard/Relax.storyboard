@@ -1,26 +1,112 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="hip-4i-COJ">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16086"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="BalooThambi2-SemiBold.ttf">
+            <string>BalooThambi2-SemiBold</string>
+        </array>
+    </customFonts>
     <scenes>
-        <!--RelaxVC-->
-        <scene sceneID="Iuf-Zg-cdG">
+        <!--Relax-->
+        <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="hip-4i-COJ" customClass="RelaxVC" customModule="Kelompok_18_MC1" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="ihe-aX-dcN">
+                <viewController id="BYZ-38-t0r" customClass="RelaxVC" customModule="Kelompok_18_MC1" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ROUND 1" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="N6K-Cf-Ckt">
+                                <rect key="frame" x="162" y="81" width="90" height="31"/>
+                                <fontDescription key="fontDescription" name="BalooThambi2-SemiBold" family="Baloo Thambi 2" pointSize="20"/>
+                                <color key="textColor" red="0.28627450980000002" green="0.3411764706" blue="0.58823529409999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="4" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cO1-Uu-ck0">
+                                <rect key="frame" x="180" y="212" width="52" height="92"/>
+                                <fontDescription key="fontDescription" name="BalooThambi2-SemiBold" family="Baloo Thambi 2" pointSize="60"/>
+                                <color key="textColor" red="0.28627450980392155" green="0.3411764705882353" blue="0.58823529411764708" alpha="0.84705882352941175" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cPA-V8-aeS">
+                                <rect key="frame" x="171" y="686" width="71" height="71"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="71" id="MKd-fD-eKb"/>
+                                </constraints>
+                                <state key="normal" image="PlayButton"/>
+                                <connections>
+                                    <action selector="startBtn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Hbc-9L-JjI"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="etA-kF-4M9">
+                                <rect key="frame" x="171" y="686" width="71" height="71"/>
+                                <state key="normal" image="PauseButton"/>
+                                <connections>
+                                    <action selector="pauseBtn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="GtI-a6-aeH"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Let's do  a breathing exercise to relax" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XVG-Rh-KDH">
+                                <rect key="frame" x="43" y="102" width="328" height="117"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="117" id="1oi-wA-sqT"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="BalooThambi2-SemiBold" family="Baloo Thambi 2" pointSize="36"/>
+                                <color key="textColor" red="0.28627450980000002" green="0.3411764706" blue="0.58823529409999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="NappyRevisi-7" translatesAutoresizingMaskIntoConstraints="NO" id="6xg-lm-uLY">
+                                <rect key="frame" x="31" y="312" width="350" height="350"/>
+                            </imageView>
+                        </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                        <viewLayoutGuide key="safeArea" id="9Dx-MO-LeB"/>
+                        <constraints>
+                            <constraint firstItem="6xg-lm-uLY" firstAttribute="top" secondItem="cO1-Uu-ck0" secondAttribute="bottom" constant="8" id="3Fl-KF-BLz"/>
+                            <constraint firstItem="XVG-Rh-KDH" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="43" id="495-p8-GzW"/>
+                            <constraint firstItem="etA-kF-4M9" firstAttribute="top" secondItem="cPA-V8-aeS" secondAttribute="top" id="5z7-WL-zMH"/>
+                            <constraint firstItem="etA-kF-4M9" firstAttribute="top" secondItem="6xg-lm-uLY" secondAttribute="bottom" constant="24" id="E4K-hs-3n7"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="cPA-V8-aeS" secondAttribute="bottom" constant="56" id="FJD-CY-Z21"/>
+                            <constraint firstItem="6xg-lm-uLY" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="31" id="FM5-6z-2qb"/>
+                            <constraint firstItem="N6K-Cf-Ckt" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="162" id="FMC-AR-kBa"/>
+                            <constraint firstItem="N6K-Cf-Ckt" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Jjb-KE-rIt"/>
+                            <constraint firstItem="cPA-V8-aeS" firstAttribute="trailing" secondItem="etA-kF-4M9" secondAttribute="trailing" id="MoK-Ud-ETL"/>
+                            <constraint firstItem="XVG-Rh-KDH" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="58" id="V4F-bz-ejg"/>
+                            <constraint firstItem="XVG-Rh-KDH" firstAttribute="centerX" secondItem="cPA-V8-aeS" secondAttribute="centerX" id="WTU-1C-G78"/>
+                            <constraint firstItem="cPA-V8-aeS" firstAttribute="leading" secondItem="etA-kF-4M9" secondAttribute="leading" id="ZVW-yZ-BBY"/>
+                            <constraint firstItem="cO1-Uu-ck0" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="180" id="aMA-8e-YI5"/>
+                            <constraint firstItem="N6K-Cf-Ckt" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="37" id="dRu-GB-iXr"/>
+                            <constraint firstItem="6xg-lm-uLY" firstAttribute="top" secondItem="XVG-Rh-KDH" secondAttribute="bottom" constant="93" id="ibZ-jg-qlO"/>
+                            <constraint firstItem="cO1-Uu-ck0" firstAttribute="centerX" secondItem="6xg-lm-uLY" secondAttribute="centerX" id="mKo-C8-W8T"/>
+                            <constraint firstItem="etA-kF-4M9" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="171" id="n5g-nR-kWn"/>
+                            <constraint firstItem="N6K-Cf-Ckt" firstAttribute="centerX" secondItem="XVG-Rh-KDH" secondAttribute="centerX" id="rSs-bY-oV5"/>
+                            <constraint firstItem="6xg-lm-uLY" firstAttribute="centerX" secondItem="cPA-V8-aeS" secondAttribute="centerX" id="uqk-qd-bhs"/>
+                            <constraint firstItem="cPA-V8-aeS" firstAttribute="baseline" secondItem="etA-kF-4M9" secondAttribute="baseline" id="vyA-Cx-xeF"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <tabBarItem key="tabBarItem" title="Relax" image="largecircle.fill.circle" catalog="system" id="h52-bB-hdG"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="countdownLbl" destination="cO1-Uu-ck0" id="8x8-Cf-Uz4"/>
+                        <outlet property="detailLbl" destination="XVG-Rh-KDH" id="Tut-QX-m2d"/>
+                        <outlet property="imageView" destination="6xg-lm-uLY" id="AyP-Gn-Li5"/>
+                        <outlet property="pauseOutlet" destination="etA-kF-4M9" id="2gD-ya-MfL"/>
+                        <outlet property="playOutlet" destination="cPA-V8-aeS" id="YsG-rQ-CV4"/>
+                        <outlet property="roundLbl" destination="N6K-Cf-Ckt" id="Rv6-Vh-m6o"/>
+                    </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="GsR-nq-Eyf" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="558" y="256"/>
+            <point key="canvasLocation" x="360.86956521739131" y="4.6875"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="NappyRevisi-7" width="4500" height="4500"/>
+        <image name="PauseButton" width="70" height="70"/>
+        <image name="PlayButton" width="70" height="70"/>
+        <image name="largecircle.fill.circle" catalog="system" width="128" height="121"/>
+    </resources>
 </document>
