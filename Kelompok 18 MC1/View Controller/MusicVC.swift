@@ -9,6 +9,7 @@
 import UIKit
 import AVFoundation
 
+//for undwind music data
 protocol ChooseSongDelegate {
     func chooseSong(title: String)
 }
@@ -28,17 +29,17 @@ class MusicVC: UIViewController {
     @IBAction func playAndStopMusic(_ sender: UIButton) {
         switch sender.accessibilityIdentifier {
         case "music1Button":
-            addMusic(title: "bensound-summer")
+            addMusic(title: "Music1")
             audioPlayer.play()
-            choosenTitle = "bensound-summer"
+            choosenTitle = "Music1"
         case "music2Button":
-            addMusic(title: "bensound-ukulele")
+            addMusic(title: "Music2")
             audioPlayer.play()
-            choosenTitle = "bensound-ukulele"
+            choosenTitle = "Music2"
         case "music3Button":
-            addMusic(title: "bensound-creativeminds")
+            addMusic(title: "Music3")
             audioPlayer.play()
-            choosenTitle = "bensound-creativeminds"
+            choosenTitle = "Music3"
         case "musicOffButton":
             audioPlayer.stop()
             audioPlayer.currentTime = 0

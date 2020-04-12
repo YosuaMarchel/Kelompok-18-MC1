@@ -136,7 +136,7 @@ class HomeVC: UIViewController {
             //showAlertTimesUp()
             
             //play alarm sound
-            let path = Bundle.main.path(forResource: "bensound-creativeminds", ofType: "mp3")!
+            let path = Bundle.main.path(forResource: "Alarm", ofType: "mp3")!
             let url = URL(fileURLWithPath: path)
             do {
                 audioPlayer =  try AVAudioPlayer(contentsOf: url)
@@ -151,6 +151,9 @@ class HomeVC: UIViewController {
             //progress bar
             self.progress.completedUnitCount = progress.totalUnitCount - seconds
             self.timerProgress.setProgress(Float(self.progress.fractionCompleted), animated: true)
+            if audioPlayer.isPlaying == false {
+                audioPlayer.play()
+            }
         }
     }
     
@@ -218,6 +221,7 @@ class HomeVC: UIViewController {
     
 }
 
+//for unwind music data
 extension HomeVC: ChooseSongDelegate {
     func chooseSong(title: String) {
         self.dismiss(animated: true) {

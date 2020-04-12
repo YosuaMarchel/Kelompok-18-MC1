@@ -19,6 +19,11 @@
 		7C3B890E244358ED009C9258 /* Nappy2.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 7C3B890A244358EC009C9258 /* Nappy2.mp3 */; };
 		7C3B890F244358ED009C9258 /* Nappy1.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 7C3B890B244358EC009C9258 /* Nappy1.mp3 */; };
 		7C3B8910244358ED009C9258 /* Nappy3.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 7C3B890C244358EC009C9258 /* Nappy3.mp3 */; };
+		7C3B891224436B24009C9258 /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C3B891124436B24009C9258 /* MainVC.swift */; };
+		7C3B891624437FCF009C9258 /* Music2.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 7C3B891324437FCF009C9258 /* Music2.mp3 */; };
+		7C3B891824437FCF009C9258 /* Music1.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 7C3B891524437FCF009C9258 /* Music1.mp3 */; };
+		7C3B891A2443801C009C9258 /* Alarm.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 7C3B89192443801C009C9258 /* Alarm.mp3 */; };
+		7C3B891C244381AB009C9258 /* Music3.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 7C3B891B244381AB009C9258 /* Music3.mp3 */; };
 		7CE1F30C243F47AE00A15787 /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7CE1F30E243F47AE00A15787 /* Home.storyboard */; };
 		7CF40ED0243F6A8B00C2F351 /* BalooThambi2-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7CF40ECB243F6A8A00C2F351 /* BalooThambi2-Regular.ttf */; };
 		7CF40ED1243F6A8B00C2F351 /* BalooThambi2-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7CF40ECC243F6A8A00C2F351 /* BalooThambi2-SemiBold.ttf */; };
@@ -26,9 +31,6 @@
 		7CF40ED3243F6A8B00C2F351 /* BalooThambi2-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7CF40ECE243F6A8B00C2F351 /* BalooThambi2-Bold.ttf */; };
 		7CF40ED4243F6A8B00C2F351 /* BalooThambi2-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7CF40ECF243F6A8B00C2F351 /* BalooThambi2-Medium.ttf */; };
 		7CF40EDC243F7AA100C2F351 /* MusicVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CF40EDB243F7AA100C2F351 /* MusicVC.swift */; };
-		7CF40EDE243F85C900C2F351 /* bensound-summer.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 7CF40EDD243F85C900C2F351 /* bensound-summer.mp3 */; };
-		7CF40EE1243F86C400C2F351 /* bensound-ukulele.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 7CF40EE0243F86C400C2F351 /* bensound-ukulele.mp3 */; };
-		7CF40EE3243F872700C2F351 /* bensound-creativeminds.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 7CF40EE2243F872700C2F351 /* bensound-creativeminds.mp3 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -46,6 +48,11 @@
 		7C3B890A244358EC009C9258 /* Nappy2.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Nappy2.mp3; sourceTree = "<group>"; };
 		7C3B890B244358EC009C9258 /* Nappy1.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Nappy1.mp3; sourceTree = "<group>"; };
 		7C3B890C244358EC009C9258 /* Nappy3.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Nappy3.mp3; sourceTree = "<group>"; };
+		7C3B891124436B24009C9258 /* MainVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainVC.swift; sourceTree = "<group>"; };
+		7C3B891324437FCF009C9258 /* Music2.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Music2.mp3; sourceTree = "<group>"; };
+		7C3B891524437FCF009C9258 /* Music1.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Music1.mp3; sourceTree = "<group>"; };
+		7C3B89192443801C009C9258 /* Alarm.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Alarm.mp3; sourceTree = "<group>"; };
+		7C3B891B244381AB009C9258 /* Music3.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Music3.mp3; sourceTree = "<group>"; };
 		7CE1F30D243F47AE00A15787 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Home.storyboard; sourceTree = "<group>"; };
 		7CF40ECB243F6A8A00C2F351 /* BalooThambi2-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "BalooThambi2-Regular.ttf"; sourceTree = "<group>"; };
 		7CF40ECC243F6A8A00C2F351 /* BalooThambi2-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "BalooThambi2-SemiBold.ttf"; sourceTree = "<group>"; };
@@ -53,9 +60,6 @@
 		7CF40ECE243F6A8B00C2F351 /* BalooThambi2-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "BalooThambi2-Bold.ttf"; sourceTree = "<group>"; };
 		7CF40ECF243F6A8B00C2F351 /* BalooThambi2-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "BalooThambi2-Medium.ttf"; sourceTree = "<group>"; };
 		7CF40EDB243F7AA100C2F351 /* MusicVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicVC.swift; sourceTree = "<group>"; };
-		7CF40EDD243F85C900C2F351 /* bensound-summer.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "bensound-summer.mp3"; sourceTree = "<group>"; };
-		7CF40EE0243F86C400C2F351 /* bensound-ukulele.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "bensound-ukulele.mp3"; sourceTree = "<group>"; };
-		7CF40EE2243F872700C2F351 /* bensound-creativeminds.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "bensound-creativeminds.mp3"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -118,6 +122,7 @@
 				7C3250A6243C67300094F45C /* HomeVC.swift */,
 				7C3B890524435626009C9258 /* RelaxVC.swift */,
 				7CF40EDB243F7AA100C2F351 /* MusicVC.swift */,
+				7C3B891124436B24009C9258 /* MainVC.swift */,
 			);
 			path = "View Controller";
 			sourceTree = "<group>";
@@ -148,9 +153,10 @@
 				7C3B890B244358EC009C9258 /* Nappy1.mp3 */,
 				7C3B890A244358EC009C9258 /* Nappy2.mp3 */,
 				7C3B890C244358EC009C9258 /* Nappy3.mp3 */,
-				7CF40EE0243F86C400C2F351 /* bensound-ukulele.mp3 */,
-				7CF40EDD243F85C900C2F351 /* bensound-summer.mp3 */,
-				7CF40EE2243F872700C2F351 /* bensound-creativeminds.mp3 */,
+				7C3B891524437FCF009C9258 /* Music1.mp3 */,
+				7C3B891324437FCF009C9258 /* Music2.mp3 */,
+				7C3B891B244381AB009C9258 /* Music3.mp3 */,
+				7C3B89192443801C009C9258 /* Alarm.mp3 */,
 			);
 			path = Music;
 			sourceTree = "<group>";
@@ -213,19 +219,20 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7C3B891C244381AB009C9258 /* Music3.mp3 in Resources */,
+				7C3B891A2443801C009C9258 /* Alarm.mp3 in Resources */,
 				7C325097243C24590094F45C /* LaunchScreen.storyboard in Resources */,
 				7C3B890F244358ED009C9258 /* Nappy1.mp3 in Resources */,
-				7CF40EE3243F872700C2F351 /* bensound-creativeminds.mp3 in Resources */,
+				7C3B891824437FCF009C9258 /* Music1.mp3 in Resources */,
 				7CE1F30C243F47AE00A15787 /* Home.storyboard in Resources */,
 				7C325094243C24590094F45C /* Assets.xcassets in Resources */,
 				7CF40ED0243F6A8B00C2F351 /* BalooThambi2-Regular.ttf in Resources */,
-				7CF40EDE243F85C900C2F351 /* bensound-summer.mp3 in Resources */,
 				7CF40ED1243F6A8B00C2F351 /* BalooThambi2-SemiBold.ttf in Resources */,
 				7C3B890824435626009C9258 /* Relax.storyboard in Resources */,
 				7CF40ED2243F6A8B00C2F351 /* BalooThambi2-ExtraBold.ttf in Resources */,
 				7C3B890E244358ED009C9258 /* Nappy2.mp3 in Resources */,
 				7CF40ED3243F6A8B00C2F351 /* BalooThambi2-Bold.ttf in Resources */,
-				7CF40EE1243F86C400C2F351 /* bensound-ukulele.mp3 in Resources */,
+				7C3B891624437FCF009C9258 /* Music2.mp3 in Resources */,
 				7CF40ED4243F6A8B00C2F351 /* BalooThambi2-Medium.ttf in Resources */,
 				7C3B8910244358ED009C9258 /* Nappy3.mp3 in Resources */,
 				7C325092243C24560094F45C /* Main.storyboard in Resources */,
@@ -241,6 +248,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7C3B890724435626009C9258 /* RelaxVC.swift in Sources */,
+				7C3B891224436B24009C9258 /* MainVC.swift in Sources */,
 				7C3250A7243C67300094F45C /* HomeVC.swift in Sources */,
 				7CF40EDC243F7AA100C2F351 /* MusicVC.swift in Sources */,
 				7C32508B243C24560094F45C /* AppDelegate.swift in Sources */,
