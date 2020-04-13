@@ -52,13 +52,20 @@
                                     <action selector="pauseBtn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="GtI-a6-aeH"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Let's do  a breathing exercise to relax" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XVG-Rh-KDH">
-                                <rect key="frame" x="43" y="102" width="328" height="117"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XVG-Rh-KDH">
+                                <rect key="frame" x="43" y="117" width="328" height="117"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="117" id="nrh-iK-0ZB"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" name="BalooThambi2-SemiBold" family="Baloo Thambi 2" pointSize="36"/>
-                                <color key="textColor" red="0.28627450980000002" green="0.3411764706" blue="0.58823529409999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="Let's do  a breathing exercise to relax">
+                                        <attributes>
+                                            <color key="NSColor" red="0.28627450980000002" green="0.3411764706" blue="0.58823529409999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <font key="NSFont" size="36" name="BalooThambi2-SemiBold"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineHeightMultiple="0.80000000000000004" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AIe-8I-zYU">
@@ -75,7 +82,7 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
                             <constraint firstItem="cO1-Uu-ck0" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="212" id="0QM-Yb-94i"/>
-                            <constraint firstItem="6xg-lm-uLY" firstAttribute="top" secondItem="XVG-Rh-KDH" secondAttribute="bottom" constant="76" id="1j6-zP-uwY"/>
+                            <constraint firstItem="6xg-lm-uLY" firstAttribute="top" secondItem="XVG-Rh-KDH" secondAttribute="bottom" constant="61" id="1j6-zP-uwY"/>
                             <constraint firstItem="N6K-Cf-Ckt" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="37" id="3My-c6-B8F"/>
                             <constraint firstItem="XVG-Rh-KDH" firstAttribute="centerX" secondItem="cO1-Uu-ck0" secondAttribute="centerX" id="6J1-ZI-E0Z"/>
                             <constraint firstItem="N6K-Cf-Ckt" firstAttribute="centerX" secondItem="XVG-Rh-KDH" secondAttribute="centerX" id="A5N-PY-JKC"/>
@@ -83,7 +90,7 @@
                             <constraint firstItem="N6K-Cf-Ckt" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="CqO-z7-ZkZ"/>
                             <constraint firstItem="cO1-Uu-ck0" firstAttribute="centerX" secondItem="6xg-lm-uLY" secondAttribute="centerX" id="GgD-Zd-NhT"/>
                             <constraint firstItem="AIe-8I-zYU" firstAttribute="top" secondItem="cPA-V8-aeS" secondAttribute="bottom" constant="23" id="MVa-mX-yfM"/>
-                            <constraint firstItem="XVG-Rh-KDH" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="58" id="MpR-jT-awG"/>
+                            <constraint firstItem="XVG-Rh-KDH" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="73" id="MpR-jT-awG"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="AIe-8I-zYU" secondAttribute="bottom" constant="31" id="OT4-uM-nXj"/>
                             <constraint firstItem="etA-kF-4M9" firstAttribute="top" secondItem="cPA-V8-aeS" secondAttribute="top" id="PJ5-H9-QRm"/>
                             <constraint firstItem="N6K-Cf-Ckt" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="162" id="QWc-Ed-m4m"/>

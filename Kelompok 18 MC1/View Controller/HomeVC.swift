@@ -132,9 +132,6 @@ class HomeVC: UIViewController {
             timerLabel.text = "Wakey wakey, sleepyhead!"
             timerLabel.font = timerLabel.font.withSize(30)
             
-            //Send alert to indicate "time's up!"
-            //showAlertTimesUp()
-            
             //play alarm sound
             let path = Bundle.main.path(forResource: "Alarm", ofType: "mp3")!
             let url = URL(fileURLWithPath: path)
@@ -151,9 +148,6 @@ class HomeVC: UIViewController {
             //progress bar
             self.progress.completedUnitCount = progress.totalUnitCount - seconds
             self.timerProgress.setProgress(Float(self.progress.fractionCompleted), animated: true)
-            if audioPlayer.isPlaying == false {
-                audioPlayer.play()
-            }
         }
     }
     

@@ -149,7 +149,7 @@
                                     <constraint firstAttribute="height" constant="97" id="4gB-HX-grL"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="BalooThambi2-Medium" family="Baloo Thambi 2" pointSize="24"/>
-                                <state key="normal" title="Music #2">
+                                <state key="normal" title="Piano">
                                     <color key="titleColor" red="0.28627450980000002" green="0.3411764706" blue="0.58823529409999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
@@ -163,7 +163,7 @@
                                     <constraint firstAttribute="height" constant="97" id="vCi-UE-Vdq"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="BalooThambi2-Medium" family="Baloo Thambi 2" pointSize="24"/>
-                                <state key="normal" title="Music #3">
+                                <state key="normal" title="Lullaby">
                                     <color key="titleColor" red="0.28627450980000002" green="0.3411764706" blue="0.58823529409999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
@@ -177,7 +177,7 @@
                                     <constraint firstAttribute="height" constant="96" id="lZV-Sd-W6h"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="BalooThambi2-Medium" family="Baloo Thambi 2" pointSize="24"/>
-                                <state key="normal" title="Music #1">
+                                <state key="normal" title="Rain">
                                     <color key="titleColor" red="0.28627450980000002" green="0.3411764706" blue="0.58823529409999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>

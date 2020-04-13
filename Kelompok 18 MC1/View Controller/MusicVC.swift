@@ -15,7 +15,7 @@ protocol ChooseSongDelegate {
 }
 
 class MusicVC: UIViewController {
-        
+    
     var delegate: ChooseSongDelegate?
     
     //for Music
@@ -50,6 +50,7 @@ class MusicVC: UIViewController {
         
         
     }
+    
     @IBAction func chooseButtonTapped(_ sender: UIButton) {
         let title = choosenTitle
         delegate?.chooseSong(title: title)

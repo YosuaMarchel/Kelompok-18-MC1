@@ -11,7 +11,6 @@
 		7C32508D243C24560094F45C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C32508C243C24560094F45C /* SceneDelegate.swift */; };
 		7C325092243C24560094F45C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7C325090243C24560094F45C /* Main.storyboard */; };
 		7C325094243C24590094F45C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7C325093243C24590094F45C /* Assets.xcassets */; };
-		7C325097243C24590094F45C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7C325095243C24590094F45C /* LaunchScreen.storyboard */; };
 		7C3250A7243C67300094F45C /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C3250A6243C67300094F45C /* HomeVC.swift */; };
 		7C3B890724435626009C9258 /* RelaxVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C3B890524435626009C9258 /* RelaxVC.swift */; };
 		7C3B890824435626009C9258 /* Relax.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7C3B890624435626009C9258 /* Relax.storyboard */; };
@@ -19,11 +18,14 @@
 		7C3B890E244358ED009C9258 /* Nappy2.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 7C3B890A244358EC009C9258 /* Nappy2.mp3 */; };
 		7C3B890F244358ED009C9258 /* Nappy1.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 7C3B890B244358EC009C9258 /* Nappy1.mp3 */; };
 		7C3B8910244358ED009C9258 /* Nappy3.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 7C3B890C244358EC009C9258 /* Nappy3.mp3 */; };
-		7C3B891224436B24009C9258 /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C3B891124436B24009C9258 /* MainVC.swift */; };
 		7C3B891624437FCF009C9258 /* Music2.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 7C3B891324437FCF009C9258 /* Music2.mp3 */; };
 		7C3B891824437FCF009C9258 /* Music1.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 7C3B891524437FCF009C9258 /* Music1.mp3 */; };
 		7C3B891A2443801C009C9258 /* Alarm.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 7C3B89192443801C009C9258 /* Alarm.mp3 */; };
 		7C3B891C244381AB009C9258 /* Music3.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 7C3B891B244381AB009C9258 /* Music3.mp3 */; };
+		7C3B8920244411DA009C9258 /* FINAL.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 7C3B891F244411DA009C9258 /* FINAL.jpg */; };
+		7C3B892224441D47009C9258 /* Onboarding.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7C3B892124441D47009C9258 /* Onboarding.storyboard */; };
+		7C3B892424441D55009C9258 /* OnboardingVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C3B892324441D55009C9258 /* OnboardingVC.swift */; };
+		7C3B89262444215F009C9258 /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C3B89252444215F009C9258 /* MainVC.swift */; };
 		7CE1F30C243F47AE00A15787 /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7CE1F30E243F47AE00A15787 /* Home.storyboard */; };
 		7CF40ED0243F6A8B00C2F351 /* BalooThambi2-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7CF40ECB243F6A8A00C2F351 /* BalooThambi2-Regular.ttf */; };
 		7CF40ED1243F6A8B00C2F351 /* BalooThambi2-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7CF40ECC243F6A8A00C2F351 /* BalooThambi2-SemiBold.ttf */; };
@@ -34,12 +36,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		7C325087243C24560094F45C /* Kelompok 18 MC1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Kelompok 18 MC1.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7C325087243C24560094F45C /* Napp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Napp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7C32508A243C24560094F45C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7C32508C243C24560094F45C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		7C325091243C24560094F45C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		7C325093243C24590094F45C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		7C325096243C24590094F45C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7C325098243C24590094F45C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7C3250A6243C67300094F45C /* HomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
 		7C3B890524435626009C9258 /* RelaxVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RelaxVC.swift; path = "../../../../Tes Github/MC1-test-repository/Kelompok-18-MC1/RelaxVC.swift"; sourceTree = "<group>"; };
@@ -48,11 +49,14 @@
 		7C3B890A244358EC009C9258 /* Nappy2.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Nappy2.mp3; sourceTree = "<group>"; };
 		7C3B890B244358EC009C9258 /* Nappy1.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Nappy1.mp3; sourceTree = "<group>"; };
 		7C3B890C244358EC009C9258 /* Nappy3.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Nappy3.mp3; sourceTree = "<group>"; };
-		7C3B891124436B24009C9258 /* MainVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainVC.swift; sourceTree = "<group>"; };
 		7C3B891324437FCF009C9258 /* Music2.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Music2.mp3; sourceTree = "<group>"; };
 		7C3B891524437FCF009C9258 /* Music1.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Music1.mp3; sourceTree = "<group>"; };
 		7C3B89192443801C009C9258 /* Alarm.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Alarm.mp3; sourceTree = "<group>"; };
 		7C3B891B244381AB009C9258 /* Music3.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Music3.mp3; sourceTree = "<group>"; };
+		7C3B891F244411DA009C9258 /* FINAL.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = FINAL.jpg; sourceTree = "<group>"; };
+		7C3B892124441D47009C9258 /* Onboarding.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Onboarding.storyboard; sourceTree = "<group>"; };
+		7C3B892324441D55009C9258 /* OnboardingVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OnboardingVC.swift; sourceTree = "<group>"; };
+		7C3B89252444215F009C9258 /* MainVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainVC.swift; sourceTree = "<group>"; };
 		7CE1F30D243F47AE00A15787 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Home.storyboard; sourceTree = "<group>"; };
 		7CF40ECB243F6A8A00C2F351 /* BalooThambi2-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "BalooThambi2-Regular.ttf"; sourceTree = "<group>"; };
 		7CF40ECC243F6A8A00C2F351 /* BalooThambi2-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "BalooThambi2-SemiBold.ttf"; sourceTree = "<group>"; };
@@ -86,7 +90,7 @@
 		7C325088243C24560094F45C /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				7C325087243C24560094F45C /* Kelompok 18 MC1.app */,
+				7C325087243C24560094F45C /* Napp.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -94,7 +98,6 @@
 		7C325089243C24560094F45C /* Kelompok 18 MC1 */ = {
 			isa = PBXGroup;
 			children = (
-				7CF40ED8243F6CE900C2F351 /* Model */,
 				7C3250A0243C66300094F45C /* Storyboard */,
 				7C3250A3243C66950094F45C /* View Controller */,
 				7C32508A243C24560094F45C /* AppDelegate.swift */,
@@ -111,7 +114,7 @@
 				7C325090243C24560094F45C /* Main.storyboard */,
 				7CE1F30E243F47AE00A15787 /* Home.storyboard */,
 				7C3B890624435626009C9258 /* Relax.storyboard */,
-				7C325095243C24590094F45C /* LaunchScreen.storyboard */,
+				7C3B892124441D47009C9258 /* Onboarding.storyboard */,
 			);
 			path = Storyboard;
 			sourceTree = "<group>";
@@ -122,7 +125,8 @@
 				7C3250A6243C67300094F45C /* HomeVC.swift */,
 				7C3B890524435626009C9258 /* RelaxVC.swift */,
 				7CF40EDB243F7AA100C2F351 /* MusicVC.swift */,
-				7C3B891124436B24009C9258 /* MainVC.swift */,
+				7C3B892324441D55009C9258 /* OnboardingVC.swift */,
+				7C3B89252444215F009C9258 /* MainVC.swift */,
 			);
 			path = "View Controller";
 			sourceTree = "<group>";
@@ -130,6 +134,7 @@
 		7CF40ED5243F6A9D00C2F351 /* Font */ = {
 			isa = PBXGroup;
 			children = (
+				7C3B891F244411DA009C9258 /* FINAL.jpg */,
 				7CF40ECE243F6A8B00C2F351 /* BalooThambi2-Bold.ttf */,
 				7CF40ECD243F6A8B00C2F351 /* BalooThambi2-ExtraBold.ttf */,
 				7CF40ECF243F6A8B00C2F351 /* BalooThambi2-Medium.ttf */,
@@ -137,13 +142,6 @@
 				7CF40ECC243F6A8A00C2F351 /* BalooThambi2-SemiBold.ttf */,
 			);
 			path = Font;
-			sourceTree = "<group>";
-		};
-		7CF40ED8243F6CE900C2F351 /* Model */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Model;
 			sourceTree = "<group>";
 		};
 		7CF40EDF243F85D000C2F351 /* Music */ = {
@@ -178,7 +176,7 @@
 			);
 			name = "Kelompok 18 MC1";
 			productName = "Kelompok 18 MC1 Napp";
-			productReference = 7C325087243C24560094F45C /* Kelompok 18 MC1.app */;
+			productReference = 7C325087243C24560094F45C /* Napp.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -220,8 +218,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				7C3B891C244381AB009C9258 /* Music3.mp3 in Resources */,
+				7C3B8920244411DA009C9258 /* FINAL.jpg in Resources */,
 				7C3B891A2443801C009C9258 /* Alarm.mp3 in Resources */,
-				7C325097243C24590094F45C /* LaunchScreen.storyboard in Resources */,
 				7C3B890F244358ED009C9258 /* Nappy1.mp3 in Resources */,
 				7C3B891824437FCF009C9258 /* Music1.mp3 in Resources */,
 				7CE1F30C243F47AE00A15787 /* Home.storyboard in Resources */,
@@ -229,6 +227,7 @@
 				7CF40ED0243F6A8B00C2F351 /* BalooThambi2-Regular.ttf in Resources */,
 				7CF40ED1243F6A8B00C2F351 /* BalooThambi2-SemiBold.ttf in Resources */,
 				7C3B890824435626009C9258 /* Relax.storyboard in Resources */,
+				7C3B892224441D47009C9258 /* Onboarding.storyboard in Resources */,
 				7CF40ED2243F6A8B00C2F351 /* BalooThambi2-ExtraBold.ttf in Resources */,
 				7C3B890E244358ED009C9258 /* Nappy2.mp3 in Resources */,
 				7CF40ED3243F6A8B00C2F351 /* BalooThambi2-Bold.ttf in Resources */,
@@ -248,11 +247,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				7C3B890724435626009C9258 /* RelaxVC.swift in Sources */,
-				7C3B891224436B24009C9258 /* MainVC.swift in Sources */,
 				7C3250A7243C67300094F45C /* HomeVC.swift in Sources */,
 				7CF40EDC243F7AA100C2F351 /* MusicVC.swift in Sources */,
+				7C3B892424441D55009C9258 /* OnboardingVC.swift in Sources */,
 				7C32508B243C24560094F45C /* AppDelegate.swift in Sources */,
 				7C32508D243C24560094F45C /* SceneDelegate.swift in Sources */,
+				7C3B89262444215F009C9258 /* MainVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -265,14 +265,6 @@
 				7C325091243C24560094F45C /* Base */,
 			);
 			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		7C325095243C24590094F45C /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				7C325096243C24590094F45C /* Base */,
-			);
-			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
 		};
 		7CE1F30E243F47AE00A15787 /* Home.storyboard */ = {
@@ -412,7 +404,7 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "yosua.Kelompok-18-MC1";
-				PRODUCT_NAME = "Kelompok 18 MC1";
+				PRODUCT_NAME = Napp;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -430,7 +422,7 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "yosua.Kelompok-18-MC1";
-				PRODUCT_NAME = "Kelompok 18 MC1";
+				PRODUCT_NAME = Napp;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
