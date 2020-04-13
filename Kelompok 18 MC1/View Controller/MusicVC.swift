@@ -53,7 +53,6 @@ class MusicVC: UIViewController {
     @IBAction func chooseButtonTapped(_ sender: UIButton) {
         let title = choosenTitle
         delegate?.chooseSong(title: title)
-        //dismiss(animated: true, completion: nil)
     }
     
     func addMusic (title: String){

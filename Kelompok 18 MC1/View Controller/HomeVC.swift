@@ -40,9 +40,9 @@ class HomeVC: UIViewController {
         super.viewDidLoad()
         
         //label and image
-        topTextLabel.text = "Ready for napnap?"
-        timerLabel.text = "Get comfy before we nap. Worry not, Nappy will wake you up!"
-        timerLabel.font = timerLabel.font.withSize(21)
+        topTextLabel.text = "Ready for a nap?"
+        timerLabel.text = "Get comfy before we nap. \nNappy will wake you up!"
+        timerLabel.font = timerLabel.font.withSize(24)
         nappyImage.image = UIImage(named: "NappyRevisi-1")
         timerBackgroundImage.layer.cornerRadius = 30
         
@@ -129,7 +129,7 @@ class HomeVC: UIViewController {
             timer.invalidate()
             nappyImage.image = UIImage(named: "NappyRevisi-6")
             topTextLabel.text = "Times up!"
-            timerLabel.text = "Wakey wakey, Sleepyhead!"
+            timerLabel.text = "Wakey wakey, sleepyhead!"
             timerLabel.font = timerLabel.font.withSize(30)
             
             //Send alert to indicate "time's up!"
@@ -182,9 +182,9 @@ class HomeVC: UIViewController {
         
         //label and image reset
         timerLabel.text = timeString(time: TimeInterval(seconds))
-        topTextLabel.text = "Ready for napnap?"
-        timerLabel.text = "Get comfy before we nap. Worry not, Nappy will wake you up!"
-        timerLabel.font = timerLabel.font.withSize(21)
+        topTextLabel.text = "Ready for a nap?"
+        timerLabel.text = "Get comfy before we nap. \nNappy will wake you up!"
+        timerLabel.font = timerLabel.font.withSize(24)
         nappyImage.image = UIImage(named: "NappyRevisi-1")
         
         //timer progress reset
